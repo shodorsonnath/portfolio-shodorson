@@ -22,7 +22,7 @@ body {
   width: 100%;
   color: black;
   padding: 25px 20px;
-  
+  z-index: 100;
 }
 
 .navbar .logo {
@@ -30,6 +30,7 @@ body {
   font-weight: bold;
   color: black;
   text-decoration: none;
+  margin-left: -100px;
 }
 
 .menu-toggle {
@@ -42,6 +43,7 @@ body {
 .menu {
   display: flex;
   list-style: none;
+  margin-right: -100px;
 }
 
 .menu li {
@@ -69,13 +71,28 @@ body {
 }
 
 @media (max-width: 768px) {
+  .navbar{
+    margin-top: 20px;
+  }
+
+  .navbar .logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    margin-left: -100px;
+  }
+  .menu-toggle{
+    margin-right: -90px;
+  }
+
   .menu {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 50px;
-    right: 20px;
-    background-color: #000;
+    top: 75px;
+    left: 150px;
+    background-color: white;
     width: 200px;
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -93,8 +110,49 @@ body {
   .menu li {
     margin: 10px 0;
   }
+  
 }
 
+/* Medium devices (tablets, between 769px and 992px) */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .navbar {
+    padding: 15px 10px; 
+  }
+
+  .navbar .logo {
+    font-size: 20px; 
+    margin-left: 0; 
+  }
+
+  .menu {
+    justify-content: space-around; 
+    margin-right: 0;
+    flex-direction: row; 
+    display: flex; 
+    background-color: transparent;
+    box-shadow: none; 
+    position: static;
+    width: auto;
+  }
+
+  .menu li {
+    margin: 0 10px; 
+  }
+
+  .menu a {
+    font-size: 14px; 
+  }
+
+  .menu .btn-cv {
+    padding: 4px 8px;
+    font-size: 12px; 
+  }
+
+  .menu-toggle {
+    font-size: 1.2rem; 
+    display: none;
+  }
+}
 
 #page {
   position: relative;
@@ -284,6 +342,7 @@ h1, h2, h3, h4, h5, h6, figure {
     font-size: 14px;
   }
 }
+
 #fh5co-header .display-tc .profile-thumb,
 .fh5co-cover .display-tc .profile-thumb {
   background-size: cover !important;
@@ -298,7 +357,9 @@ h1, h2, h3, h4, h5, h6, figure {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+  margin-top: -150px;
 }
+
 #fh5co-header .display-tc .fh5co-social-icons li a,
 .fh5co-cover .display-tc .fh5co-social-icons li a {
   color: black;
