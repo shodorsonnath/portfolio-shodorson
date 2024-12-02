@@ -15,6 +15,91 @@ body {
   background: #fff;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: black;
+  padding: 25px 20px;
+  
+}
+
+.navbar .logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: black;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin: 0 15px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+.menu .btn-cv {
+  color: #ff9800;
+  border: 2px solid #ff9800;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.menu .btn-cv:hover {
+  background-color: #ff9800;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #000;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+}
+
+
+
+
+
+
 #page {
   position: relative;
   overflow-x: hidden;
@@ -197,6 +282,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 @media screen and (max-width: 768px) {
+  
   #fh5co-header .display-tc h3,
   .fh5co-cover .display-tc h3 {
     font-size: 14px;
@@ -208,8 +294,8 @@ h1, h2, h3, h4, h5, h6, figure {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  height: 250px;
-  width: 250px;
+  height: 240px;
+  width: 240px;
   margin: 0 auto;
   margin-bottom: 30px;
   -webkit-border-radius: 50%;
@@ -240,6 +326,16 @@ h1, h2, h3, h4, h5, h6, figure {
   float: left;
 }
 @media screen and (max-width: 992px) {
+
+  #fh5co-header .display-tc .profile-thumb,
+  .fh5co-cover .display-tc .profile-thumb {
+    margin-top: 70px;
+  }
+
+  .fh5co-heading h2 {
+    margin-top: 50px;
+  }
+
   #fh5co-features .feature-left {
     margin-bottom: 30px;
   }
