@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Profile &mdash; Free Website Template, Free HTML5 Template by freehtml5.co</title>
+	<title>Shodorson</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
@@ -26,7 +26,7 @@
 	<!-- Animation CSS -->
 	<style>
 		@keyframes blink {
-			50% {
+			100% {
 				border-color: transparent;
 			}
 		}
@@ -69,11 +69,16 @@
 								<h3 id="animatedText"><span>Full Stack Web Developer</span></h3>
 								<p>
 								<ul class="fh5co-social-icons">
-									<li><a href="https://www.facebook.com/shodorson.nath"><i class="icon-facebook2"></i></a></li>
-									<li><a href="https://www.linkedin.com/in/shodorson-deb-nath-b20198204/"><i class="icon-linkedin2"></i></a></li>
-									<li><a href="https://github.com/shodorsonnath"><i class="fa-brands fa-github"></i></a></li>
-									<li><a href="https://x.com/shodorsonnath"><i class="fa-brands fa-x-twitter"></i></a></li>
-									<li><a href="https://www.instagram.com/shodorsondeb/"><i class="fa-brands fa-instagram"></i></a></li>
+									<li><a href="https://www.facebook.com/shodorson.nath"><i
+												class="icon-facebook2"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/shodorson-deb-nath-b20198204/"><i
+												class="icon-linkedin2"></i></a></li>
+									<li><a href="https://github.com/shodorsonnath"><i
+												class="fa-brands fa-github"></i></a></li>
+									<li><a href="https://x.com/shodorsonnath"><i class="fa-brands fa-x-twitter"></i></a>
+									</li>
+									<li><a href="https://www.instagram.com/shodorsondeb/"><i
+												class="fa-brands fa-instagram"></i></a></li>
 								</ul>
 								</p>
 							</div>
@@ -93,34 +98,36 @@
 				<div class="row">
 					<div class="col-md-4">
 						<ul class="info">
-							<li><span class="first-block">Full Name:</span><span class="second-block">Louie Jie
-									Mahusay</span></li>
-							<li><span class="first-block">Phone:</span><span class="second-block">+ 1235 2355 98</span>
+							<li><span class="first-block">Full Name:</span><span class="second-block">Shodorson
+									Nath</span></li>
+							<li><span class="first-block">Mobile:</span><span class="second-block">+880
+									1913-151966</span>
 							</li>
 							<li><span class="first-block">Email:</span><span
-									class="second-block">info@yoursite.com</span></li>
-							<li><span class="first-block">Website:</span><span
-									class="second-block">www.yoursite.com</span></li>
-							<li><span class="first-block">Address:</span><span class="second-block">198 West 21th
-									Street, Suite 721 New York NY 10016</span></li>
+									class="second-block">shodorsonnath@gmail.com</span></li>
+							<li><span class="first-block">Address:</span><span class="second-block">45/1/C/1 Ekota
+									Housing, Faridabad, Dhaka-1204</span></li>
 						</ul>
 					</div>
 					<div class="col-md-8">
 						<h2>Hello There!</h2>
-						<p>There live the blind texts far from the countries Vokalia and Consonantia, there live the
-							blind texts. Separated they live in bookmarksgrove there live the blind texts far from the
-							countries.</p>
-						<p>Far far away, behind the word mountains, Quos quia provident consequuntur culpa facere
-							ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita. Possimus
-							itaque adipisci there live the blind texts from the countries Vokalia and Consonantia, there
-							live the blind texts. Quos quia provident consequuntur culpa facere ratione maxime commodi
-							voluptates id repellat velit eaque aspernatur expedita. Possimus itaque adipisci.</p>
+						<p>Hi, I'm Shodorson Nath, a Full Stack Developer passionate about creating dynamic, responsive
+							websites and applications. With a Bachelor’s in Computer Science and Engineering from East
+							West University, Dhaka, I have honed my skills in both front-end and back-end development,
+							leveraging technologies like HTML, CSS, JavaScript, React, PHP, and MySQL.</p>
+						<p>I have hands-on experience with frameworks like Bootstrap, Tailwind CSS, Next.js, and
+							Node.js, and have worked on projects such as Facial Profiler, Health Care Point, and One
+							Place Docs, available on my GitHub. Passionate about coding and problem-solving, I enjoy
+							exploring new technologies and staying updated with industry trends. In my free time, I love
+							watching movies, listening to music, and playing cricket and football.</p>
 						<p>
 						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter2"></i></a></li>
-							<li><a href="#"><i class="icon-facebook3"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin2"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+							<li><a href="https://www.facebook.com/shodorson.nath"><i class="icon-facebook3"></i></a>
+							</li>
+							<li><a href="https://www.linkedin.com/in/shodorson-deb-nath-b20198204/"><i
+										class="icon-linkedin2"></i></a></li>
+							<li><a href="https://github.com/shodorsonnath"><i class="fa-brands fa-github"></i></a></li>
+							<li><a href="https://x.com/shodorsonnath"><i class="fa-brands fa-x-twitter"></i></a></li>
 						</ul>
 						</p>
 					</div>
@@ -691,38 +698,62 @@
 		let textIndex = 0;
 
 		function changeText() {
-			textIndex = (textIndex + 1) % texts.length; // Cycle through the text array
-			textElement.style.animation = "none"; // Reset animation
+			textIndex = (textIndex + 1) % texts.length;
+			textElement.style.animation = "none";
+
 			setTimeout(() => {
 				const text = texts[textIndex];
 				textElement.textContent = text;
 
-				// Get the exact width of the text
 				const textWidth = textElement.scrollWidth + "px";
 
-				// Dynamically create a precise typing animation
 				const keyframes = `
-                    @keyframes typing {
-                        from { width: 0; }
-                        to { width: ${textWidth}; }
-                    }
-                `;
+								@keyframes typing {
+									from { width: 0; }
+									to { width: ${textWidth}; }
+								}
+								`;
 
-				// Add the keyframe to the stylesheet
-				const styleSheet = document.styleSheets[0];
-				const existingRuleIndex = Array.from(styleSheet.cssRules).findIndex(rule => rule.name === 'typing');
-				if (existingRuleIndex !== -1) {
-					styleSheet.deleteRule(existingRuleIndex); // Remove old keyframes
+				let styleSheet = document.getElementById("dynamic-styles");
+				if (!styleSheet) {
+					styleSheet = document.createElement("style");
+					styleSheet.id = "dynamic-styles";
+					document.head.appendChild(styleSheet);
 				}
-				styleSheet.insertRule(keyframes, styleSheet.cssRules.length);
+				styleSheet.textContent = keyframes;
 
-				// Apply the updated animation
 				textElement.style.animation = `typing 2s steps(${text.length}) forwards, blink 0.5s step-end infinite`;
-			}, 100); // Add a slight delay before restarting the animation
+			}, 100);
 		}
 
-		// Change text every 4 seconds
+		function initAnimation() {
+			const text = texts[textIndex];
+			textElement.textContent = text;
+
+			const textWidth = textElement.scrollWidth + "px";
+
+			const keyframes = `
+							@keyframes typing {
+								from { width: 0; }
+								to { width: ${textWidth}; }
+							}
+						`;
+
+			let styleSheet = document.getElementById("dynamic-styles");
+			if (!styleSheet) {
+				styleSheet = document.createElement("style");
+				styleSheet.id = "dynamic-styles";
+				document.head.appendChild(styleSheet);
+			}
+			styleSheet.textContent = keyframes;
+
+			textElement.style.animation = `typing 2s steps(${text.length}) forwards, blink 0.5s step-end infinite`;
+		}
+
+		initAnimation();
+
 		setInterval(changeText, 4000);
+
 	</script>
 
 </body>
