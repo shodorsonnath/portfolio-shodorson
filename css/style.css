@@ -70,6 +70,12 @@ body {
   color: white;
 }
 
+.button-pub{
+  color: #ff9800;
+  text-decoration: none;
+}
+
+
 @media (max-width: 768px) {
   .navbar{
     margin-top: 20px;
